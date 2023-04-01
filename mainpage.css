@@ -1,4 +1,6 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
 body, html {
   height: 100%;
   margin: 0;
@@ -6,7 +8,7 @@ body, html {
 }
 
 /* Style tab links */
-.tablinks {
+.tablink {
   background-color: #555;
   color: white;
   float: left;
@@ -30,5 +32,6 @@ body, html {
   height: 100%;
 }
 
-#News {background-color: red;}
-#Articles {background-color: green;}
+#News {background-color: rgb(255, 255, 255);}
+#Articles {background-color: rgb(255, 255, 255);}
+

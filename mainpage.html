@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NWOS</title>
-    
-    <link rel="stylesheet" href="mainpage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/mainpage.js"></script>
 </head>
 <body>
-    <script src="/mainpage.js"></script>
-     <!-- Tab links -->
-    <button class="tablinks" id="defaultOpen">NEWS</button>
-    <button class="tablinks">ARTICLES</button>
-  
-    <!-- Tab content -->
-    <div id="News" class="tabcontent">
-        <h4>Read all the latest bulletins here</h4>
-    </div>
-  
-    <div id="Articles" class="tabcontent">
-        <h4>Read Articles from established Reporters</h4>
-    </div>
- 
+<link rel="stylesheet" href="/mainpage.css">
+<button class="tablink" onclick="openPage('News', this, 'red')">News</button>
+<button class="tablink" onclick="openPage('Articles', this, 'green')" id="defaultOpen">Articles</button>
+
+
+<div id="News" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="Articles" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
 </body>
-</html>
+</html> 
