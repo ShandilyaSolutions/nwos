@@ -34,7 +34,15 @@ body, html {
   height: 100%;
 }
 
-#News {background-color: rgb(255, 255, 255);}
+.bulletin {
+  background-color: rgb(238, 89, 89);
+  border-radius: 15px;
+  padding: 5px;
+  width: auto;
+  height: 150px auto;
+  padding-bottom: 40px;
+}
+
 #Articles {background-color: rgb(255, 255, 255);}
 
 .card {
@@ -47,4 +55,11 @@ body, html {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.headings{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold ;
 }
