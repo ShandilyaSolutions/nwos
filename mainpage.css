@@ -62,4 +62,19 @@ body, html {
   font-size: 30px;
   color: whitesmoke;
   font-weight: bold ;
+  font-style: italic;
+}
+
+.body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 22px;
+  color: black;
+  font-weight: normal;
+  font-style: oblique;
+}
+
+ul
+{
+  padding: 0;
+  list-style-type: none;
 }
