@@ -1,27 +1,21 @@
-// Why are you bothering in using parameters, as it will make it unmanageable for you in the long run, you should make it a way that is clean enough to run properly
-function openPage() {
-    // In order to remove, page name parameter as it is initially not needed as well as removing the element name as well, using a query selector to get the buttons, is more efficient.
-    const newsButton = document.querySelector(
-        "header nav div button:nth-child(1)"
-    );
-    const articlesButton = document.querySelector(
-        "header nav div button:nth-child(2)"
-    );
-}
-
-function openPage(pageName, elmnt, color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+// Why are you bothering in using so many parameters, as it will make it unmanageable for you in the long run, you should make it a way that is clean enough to run properly
+function openPage(element) {
+    const news = document.querySelector("main #news");
+    const articles = document.querySelector("main #articles");
+    // Use the correct logic to display what you actually need to
+    if (element.innerText == "News") {
+        if (news.style.display == "none") {
+            news.style.display = "block";
+        } else {
+            news.style.display = "none";
+        }
+        articles.style.display = "none";
+    } else if (element.innerText == "Articles") {
+        if (articles.style.display == "none") {
+            articles.style.display = "block";
+        } else {
+            articles.style.display = "none";
+        }
+        news.style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
