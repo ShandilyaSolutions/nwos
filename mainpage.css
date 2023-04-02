@@ -1,29 +1,39 @@
-* {box-sizing: border-box}
-
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+/* Use root to declare variables that you will use so that it will ease you into working on the styling */
+:root {
+	--percentage: 100%;
+	--pixelate: 1080px;
+	--color1: rgb(calc(var(--percentage) * (85 / 255)), calc(var(--percentage) * (85 / 255)), calc(var(--percentage) * (85 / 255)));
+	--color2: rgb(var(--percentage), var(--percentage), var(--percentage));
+	--color3: rgb(calc(var(--percentage) * (119 / 255)), calc(var(--percentage) * (119 / 255)), calc(var(--percentage) * (119 / 255)));
 }
-
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 50%;
-  border-radius: 12px;
-  font-size: larger;
+/* There is no need to select html, what you see in the web browser is the body */
+body {
+	height: var(--percentage);
+	width: var(--percentage);
+	/* You can use calculate function to return processed values */
+	margin: calc(var(--percentage) * 0);
+	/* Arial is a sans-serif font, just use it on your body and you need any custom font, you can import them later on */
+	font-family: sans-serif;
 }
-
-.tablink:hover {
-  background-color: #777;
+header nav {
+    display: flex;
+}
+header nav div {
+    width: calc(var(--percentage) / 2);
+    display: flex;
+    justify-content: center;
+}
+header nav div button {
+    background-color: var(--color1);
+	color: var(--color2);
+	border: none;
+	cursor: pointer;
+	padding: calc(var(--pixelate) / 100) calc(var(--pixelate) / 100);
+	font-size: calc(var(--percentage) * 1.1);
+	border-radius: calc(var(--pixelate) / 50);
+}
+header nav div button:hover {
+    background-color: var(--color3);
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -77,4 +87,4 @@ ul
 {
   padding: 0;
   list-style-type: none;
-}
+} */
