@@ -122,4 +122,8 @@ main #articles div {
     padding: calc(var(--percentage) / 100);
     margin: calc(var(--percentage) / 100) calc(var(--percentage) / 20);
     width: calc(var(--percentage) * 0.88);
+    font-style: oblique;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
