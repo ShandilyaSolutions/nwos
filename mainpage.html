@@ -5,30 +5,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DEBUGGING</title>
+	<title>nwos</title>
 	<script src="mainpage.js"></script>
-	<!-- Always import your stylesheets in the head tag -->
 	<link rel="stylesheet" href="mainpage.css" />
 </head>
 
 <body>
-	<!-- As a good practice, seperate your HTML into three components -->
 	<header>
-		<!-- Use the nav tag for navigation bar -->
 		<nav>
 			<div>
 				<button onclick="openPage(this)">News</button>
-				<!-- <button class="tablink" onclick="openPage('News', this, 'red')">News</button> -->
 			</div>
 			<div>
 				<button onclick="openPage(this)">Articles</button>
-				<!-- <button class="tablink" onclick="openPage('Articles', this, 'green')" id="defaultOpen">Articles</button> -->
 			</div>
 		</nav>
 	</header>
 	<main>
 		<div id="news">
-			<!-- You don't even need unordered list tag as well as list item tags for making it, just use a div -->
+			<!-- Need to automate this using a news API -->
+			<!-- Priority task is to add date manually(later automatically in each card) and scrolling feature.-->
 			<div class="card">
 				<h1>India vs Australia</h1>
 				<div>India wins the match amazingly at the Chinnasamy Stadium, Banglore in an exciting match full of
@@ -39,9 +35,27 @@
 				<div>Due to his objectionable speech in which targeted the Modi community, Rahul Gandhi was punished by
 					Surat court. Due to this criminal act, he was removed from the parliament</div>
 			</div>
+			<div class="card">
+				<h1>Covid-19 India Update</h1>
+				<div>India records 3641 fresh cases, and 11 deaths</div>
+			</div>
+			<div class="card">
+				<h1>Dividend news</h1>
+				<div>Tiger glucose buiscuit maker Britania to consider dividend on 4th April</div>
+			</div>
+			<div class="card">
+				<h1>Dividend news</h1>
+				<div>Tiger glucose buiscuit maker Britania to consider dividend on 4th April</div>
+			</div>
+			<div class="card">
+				<h1>IPL 2023</h1>
+				<div>MI v/s RCB : Kohli and Du Plessis lead Banglore to 8 wickets victory over Mumbai Indians</div>
+			</div>
 		</div>
 		<div id="articles">
-			<div>Read articles here</div>
+			<div class="card">
+				<h1>Article Name : Author Name</h1>
+			</div>
 		</div>
 	</main>
 	<footer></footer>
