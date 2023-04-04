@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="mainpage.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DEBUGGING</title>
+	<script src="mainpage.js"></script>
+	<!-- Always import your stylesheets in the head tag -->
+	<link rel="stylesheet" href="mainpage.css" />
 </head>
+
 <body>
-<link rel="stylesheet" href="mainpage.css">
-<button class="tablink" onclick="openPage('News', this, 'red')">News</button>
-<button class="tablink" onclick="openPage('Articles', this, 'green')" id="defaultOpen">Articles</button>
-
-
-<div id="News" class="tabcontent">
-  <!-- Make cards to hold the news-->
-  <ul>
-    <li>
-        <div class="bulletin">
-            <p class="headings">India vs Australia</p>
-            <p class="body">India wins the match amazingly at the Chinnasamy Stadium, Banglore in an exciting match full of twists and turns</p>
-        </div>
-    </li>
-
-    <li>
-        <div class="bulletin">
-            <p class="headings">Rahul Gandhi out of Parliament</p>
-            <p class="body">Due to his objectionable speech  in which targeted the Modi community, Rahul Gandhi was punished by Surat court. Due to this criminal act, he was removed from the parliament</p>
-        </div>
-    </li>
-
-  </ul>
-</div>
-
-<div id="Articles" class="tabcontent">
-  <p>Read articles here</p> 
-</div>
-
+	<!-- As a good practice, seperate your HTML into three components -->
+	<header>
+		<!-- Use the nav tag for navigation bar -->
+		<nav>
+			<div>
+				<button onclick="openPage(this)">News</button>
+				<!-- <button class="tablink" onclick="openPage('News', this, 'red')">News</button> -->
+			</div>
+			<div>
+				<button onclick="openPage(this)">Articles</button>
+				<!-- <button class="tablink" onclick="openPage('Articles', this, 'green')" id="defaultOpen">Articles</button> -->
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id="news">
+			<!-- You don't even need unordered list tag as well as list item tags for making it, just use a div -->
+			<div class="card">
+				<h1>India vs Australia</h1>
+				<div>India wins the match amazingly at the Chinnasamy Stadium, Banglore in an exciting match full of
+					twists and turns</div>
+			</div>
+			<div class="card">
+				<h1>Rahul Gandhi out of Parliament</h1>
+				<div>Due to his objectionable speech in which targeted the Modi community, Rahul Gandhi was punished by
+					Surat court. Due to this criminal act, he was removed from the parliament</div>
+			</div>
+		</div>
+		<div id="articles">
+			<div>Read articles here</div>
+		</div>
+	</main>
+	<footer></footer>
 </body>
-</html> 
+
+</html>
