@@ -112,6 +112,7 @@ main #news .card div {
     height: calc(var(--percentage) * 0.6);
     font-weight: normal;
     font-style: oblique;
+    text-align: center;
 }
 main #articles {
     background-color: var(--color2);
