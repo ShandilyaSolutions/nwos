@@ -1,4 +1,4 @@
-/* Use root to declare variables that you will use so that it will ease you into working on the styling */
+/* Using root to declare variables that you will use so that it will ease you into working on the styling */
 :root {
     --percentage: 100%;
     --pixelate: 1080px;
@@ -36,14 +36,10 @@
         calc(var(--percentage) * (89 / 255))
     );
 }
-/* There is no need to select html, what you see in the web browser is the body */
 body {
-    /* When, you use height as 100% for the body, other elements cannot take 100% or you will end up in a big mess */
     height: var(--percentage);
     width: var(--percentage);
-    /* You can use calculate function to return processed values */
     margin: calc(var(--percentage) * 0);
-    /* Arial is a sans-serif font, just use it on your body and you need any custom font, you can import them later on */
     font-family: sans-serif;
     color: var(--color4);
 }
@@ -69,6 +65,8 @@ header nav div button {
     padding: calc(var(--pixelate) / 100) calc(var(--pixelate) / 100);
     font-size: calc(var(--percentage) * 1.1);
     border-radius: calc(var(--pixelate) / 50);
+
+    /* margin-top: 205px; */
 }
 header nav div button:hover {
     background-color: var(--color3);
@@ -126,4 +124,24 @@ main #articles div {
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.top div {
+    display: flex;
+    align-items: center; 
+}
+.top h1{
+    font-weight: 500;
+    font-style: italic;
+    font-family: fantasy;
+    margin-left: 10px;
 }
