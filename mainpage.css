@@ -131,16 +131,17 @@ img{
     padding: 5px;
     width: 100px;
 }
+.top{
+    display: flex;
+    align-items: center;
+}
 .top div {
     display: flex;
     align-items: center; 
-    float: left;
 }
 .top h1{
     font-weight: 500;
     font-style: italic;
     font-family: fantasy;
-    float: left;
     margin-left: 10px;
-    margin-top: 45px;
 }
