@@ -65,8 +65,6 @@ header nav div button {
     padding: calc(var(--pixelate) / 100) calc(var(--pixelate) / 100);
     font-size: calc(var(--percentage) * 1.1);
     border-radius: calc(var(--pixelate) / 50);
-
-    /* margin-top: 205px; */
 }
 header nav div button:hover {
     background-color: var(--color3);
