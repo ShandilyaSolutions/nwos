@@ -167,11 +167,16 @@ img{
     width: 48px;
 }
 
+#github_logo{
+    height: 48px;
+    width: 48px;
+}
+
 .side_panel{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    
+    align-items: baseline;
 }
