@@ -36,6 +36,7 @@
         calc(var(--percentage) * (89 / 255))
     );
 }
+
 body {
     height: var(--percentage);
     width: var(--percentage);
@@ -43,13 +44,16 @@ body {
     font-family: sans-serif;
     color: var(--color4);
 }
+
 header {
     height: calc(var(--pixelate) * (5 / 108));
 }
+
 header nav {
     display: flex;
     height: var(--percentage);
 }
+
 header nav div {
     height: var(--percentage);
     width: calc(var(--percentage) / 2);
@@ -57,6 +61,7 @@ header nav div {
     justify-content: center;
     align-items: center;
 }
+
 header nav div button {
     background-color: var(--color1);
     color: var(--color2);
@@ -66,18 +71,22 @@ header nav div button {
     font-size: calc(var(--percentage) * 1.1);
     border-radius: calc(var(--pixelate) / 50);
 }
+
 header nav div button:hover {
     background-color: var(--color3);
 }
+
 main {
     height: calc(var(--pixelate) * (535 / 1080));
 }
+
 main #news,
 main #articles {
     height: var(--percentage);
     padding: calc(var(--percentage) * 0);
     display: none;
 }
+
 main #news .card,
 main #articles div {
     background-color: var(--color5);
@@ -89,10 +98,12 @@ main #articles div {
     box-shadow: 0 calc(var(--pixelate) / 200) calc(var(--pixelate) / 100) 0;
     transition: calc(var(--time) * 0.3);
 }
+
 main #news .card:hover,
 main #articles div:hover {
     box-shadow: 0 calc(var(--pixelate) / 100) calc(var(--pixelate) / 50) 0;
 }
+
 main #news .card h1 {
     margin: calc(var(--percentage) * 0);
     text-align: center;
@@ -102,6 +113,7 @@ main #news .card h1 {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 main #news .card div {
     margin: calc(var(--percentage) * 0) calc(var(--percentage) / 100);
     width: calc(var(--percentage) * 0.98);
@@ -110,9 +122,11 @@ main #news .card div {
     font-style: oblique;
     text-align: center;
 }
+
 main #articles {
     background-color: var(--color2);
 }
+
 main #articles div {
     background-color: var(--color7);
     padding: calc(var(--percentage) / 100);
@@ -123,23 +137,41 @@ main #articles div {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
+
 img{
     border-radius: 50%;
     border: 1px solid #ddd;
     padding: 5px;
     width: 100px;
 }
+
 .top{
     display: flex;
     align-items: center;
 }
+
 .top div {
     display: flex;
     align-items: center; 
 }
+
 .top h1{
     font-weight: 500;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 10px;
+}
+
+#about_logo{
+    height: 48px;
+    width: 48px;
+}
+
+.side_panel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    
 }
