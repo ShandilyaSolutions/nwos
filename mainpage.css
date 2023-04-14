@@ -143,3 +143,25 @@ img{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 10px;
 }
+
+#about_logo{
+    height: 48px;
+    width: 48px;
+    margin-left: 70em;
+}
+
+#github_logo{
+    height: 48px;
+    width: 48px;
+    margin-left: 1em;
+
+}
+
+.side_panel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    align-items: baseline;
+}
