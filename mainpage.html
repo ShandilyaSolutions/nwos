@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head of the Page -->
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="version" content="0.1" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>nwos</title>
-	<script src="./Public/Javascripts/mainpage.js"></script>
-	<link rel="stylesheet" href="./Public/Stylesheets/mainpage.css" />
+	<script src="/Public/Javascripts/mainpage.js"></script>
+	<link rel="stylesheet" href="/Public/Stylesheets/mainpage.css" />
 </head>
-<!-- Body of the page -->
 
 <body>
-	<!-- What is even the use of using <span>?  I told you previously to divide your page into three parts which are <header>, <main> and <footer> as each one of them has a different use -->
-	<!-- Header component -->
-	<header>
-		<div>
-			<div id="logo">
-				<img src="./Public/Images/logo.png" alt="Website's Logo">
-			</div>
-			<h1>A News Website that is Open Source</h1>
+	<span class="top">
+		<div class="logo">
+			<!-- This div will be used to integrate the logo sam provided -->
+			<img src="images/logo.png" alt="Logo of the website">
 		</div>
+		<h1>A News Website that is Open Source</h1>
+	</span>
+	<header>
 		<nav>
 			<div>
 				<button onclick="openPage(this)">News</button>
@@ -32,9 +28,10 @@
 			</div>
 		</nav>
 	</header>
-	<!-- Main component -->
 	<main>
 		<div id="news">
+			<!-- Need to automate this using a news API -->
+			<!-- Priority task is to add date manually(later automatically in each card) and scrolling feature.-->
 			<div class="card">
 				<h1>COVID-19 | Govt. has enough vaccine stocks, says Health Minister Mandaviya</h1>
 				<div>Mansukh Mandaviya said that India has enough vaccine stock, and that the government was in no hurry
@@ -121,8 +118,7 @@
 			</div>
 		</div>
 	</main>
-	<!-- Footer component -->
-	<footer>NWOS</footer>
+	<footer></footer>
 </body>
 
 </html>
