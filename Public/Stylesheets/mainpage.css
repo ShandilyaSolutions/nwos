@@ -172,11 +172,3 @@ img {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     margin-left: 10px;
 }
-/* <footer></footer> */
-footer {
-    height: calc(var(--pixelate) * (5 / 108));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
