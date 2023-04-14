@@ -1,4 +1,8 @@
-// Why are you bothering in using so many parameters, as it will make it unmanageable for you in the long run, you should make it a way that is clean enough to run properly
+/**
+ * Opening the pages which are either the news or the articles
+ * @param {Element} element DOM Element on which the event handler is attached to
+ * @returns {void}
+ */
 function openPage(element) {
     const news = document.querySelector("main #news");
     const articles = document.querySelector("main #articles");

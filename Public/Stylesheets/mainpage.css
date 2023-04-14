@@ -36,6 +36,7 @@
         calc(var(--percentage) * (89 / 255))
     );
 }
+/* <body></body> */
 body {
     height: var(--percentage);
     width: var(--percentage);
@@ -43,8 +44,14 @@ body {
     font-family: sans-serif;
     color: var(--color4);
 }
+/* <header></header> */
 header {
     height: calc(var(--pixelate) * (5 / 108));
+    display: flex;
+}
+header div,
+header nav {
+    width: calc(var(--percentage) / 2);
 }
 header nav {
     display: flex;
@@ -69,8 +76,34 @@ header nav div button {
 header nav div button:hover {
     background-color: var(--color3);
 }
+header div {
+    display: flex;
+    align-items: center;
+}
+header div div {
+    width: auto;
+    display: block;
+    height: var(--percentage);
+}
+header div div img {
+    height: var(--percentage);
+    width: auto;
+    border: none;
+    border-radius: calc(var(--percentage) / 2);
+    padding: calc(var(--percentage) * 0);
+}
+header div h1 {
+    font-size: calc(var(--percentage) * 1);
+    margin: calc(var(--percentage) * 0);
+    margin-left: calc(var(--percentage) / 100);
+}
+/* <main></main> */
 main {
     height: calc(var(--pixelate) * (535 / 1080));
+    overflow: scroll;
+}
+main::-webkit-scrollbar {
+    display: none;
 }
 main #news,
 main #articles {
@@ -120,26 +153,26 @@ main #articles div {
     width: calc(var(--percentage) * 0.88);
     font-style: oblique;
     font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-}
-img{
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 100px;
-}
-.top{
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-.top div {
-    display: flex;
-    align-items: center; 
+main #articles div a {
+    color: var(--color1);
+    text-decoration: none;
 }
-.top h1{
-    font-weight: 500;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 10px;
+main #articles div a h1 {
+    font-size: calc(var(--percentage) / 1);
+}
+main #articles div a:hover {
+    color: var(--color4);
+}
+/* <footer></footer> */
+footer {
+    height: calc(var(--pixelate) * (5 / 108));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
