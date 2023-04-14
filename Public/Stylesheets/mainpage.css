@@ -100,10 +100,6 @@ header div h1 {
 /* <main></main> */
 main {
     height: calc(var(--pixelate) * (535 / 1080));
-    overflow: scroll;
-}
-main::-webkit-scrollbar {
-    display: none;
 }
 main #news,
 main #articles {
