@@ -1,7 +1,6 @@
 /**
  * Opening the pages which are either the news or the articles
  * @param {Element} element DOM Element on which the event handler is attached to
- * @returns {void}
  */
 function openPage(element) {
     const news = document.querySelector("main #news");
