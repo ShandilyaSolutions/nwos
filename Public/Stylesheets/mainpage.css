@@ -154,19 +154,27 @@ main #articles div {
     font-style: oblique;
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100px;
+}
+.top {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-main #articles div a {
-    color: var(--color1);
-    text-decoration: none;
+.top div {
+    display: flex;
+    align-items: center;
 }
-main #articles div a h1 {
-    font-size: calc(var(--percentage) / 1);
-}
-main #articles div a:hover {
-    color: var(--color4);
+.top h1 {
+    font-weight: 500;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 10px;
 }
 /* <footer></footer> */
 footer {
