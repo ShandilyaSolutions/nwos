@@ -20,10 +20,11 @@ function openPage(element) {
 }
 
 
-// Modal code
-const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
+/* Modal code */
+
+const modal = document.querySelector("#About-modal")
+const button = document.querySelector(".about")
+const close = document.querySelector(".close-button")
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
@@ -35,6 +36,11 @@ function windowOnClick(event) {
     }
 }
 
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
+button.addEventListener("click", showAbout)
+function showAbout(e) {
+  modal.showModal()
+}
+
+button.addEventListener("click", toggleModal);
+close.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
