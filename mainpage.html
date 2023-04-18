@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="mainpage.css" />
 </head>
 
-<body>
+<body>	
 	<span class="top">
 		<div class="logo">
 			<!-- This div will be used to integrate the logo sam provided -->
@@ -18,17 +18,26 @@
 		</div>
 		<h1>A News Website that is Open Source</h1>
 		<ul class="side_panel">
-			<li>
-				<a class="about" data-target="#myModal" id="about_page" href="#myModal">
-					<img id="about_logo" src="images/about.png">
-				</a>
-			</li>
-			<li>
-				<a class="code" href="https://github.com/ShandilyaSolutions/nwos">
-					<img id="github-logo" src="images/github.png">
-				</a>
-			</li>
-		</ul>
+            <!--<li>
+                <a class="about" data-target="modal" id="about_page" href="#">
+                    <img id="about_logo" src="images/about.png">
+                </a>
+            </li>-->
+            <li>
+                <a class="code" href="https://github.com/ShandilyaSolutions/nwos">
+                    <img id="github_logo" src="images/github.png">
+                </a>
+            </li>
+        </ul>
+		<!-- Modal -->
+		<dialog id="About-modal">
+			<div class="modal">
+						  <div class="modal-content">
+							  <span class="close-button">&times;</span>
+							  <h1>Hello, I am Made by Shiv!</h1>
+						  </div>
+					  </div>
+		</dialog>
 	</span>
 	<header>
 		<nav>
