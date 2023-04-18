@@ -1,4 +1,3 @@
-// Why are you bothering in using so many parameters, as it will make it unmanageable for you in the long run, you should make it a way that is clean enough to run properly
 function openPage(element) {
     const news = document.querySelector("main #news");
     const articles = document.querySelector("main #articles");
@@ -19,3 +18,23 @@ function openPage(element) {
         news.style.display = "none";
     }
 }
+
+
+// Modal code
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
