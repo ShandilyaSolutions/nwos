@@ -121,6 +121,7 @@ main #news .card div {
     font-weight: normal;
     font-style: oblique;
     text-align: center;
+    font-size: 22px;
 }
 
 main #articles {
